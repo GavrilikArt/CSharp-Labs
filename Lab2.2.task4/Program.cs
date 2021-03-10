@@ -12,7 +12,7 @@ namespace Task4
             {
                 amount += number / pow;
                 pow *= 2;
-                if (number == 0)
+                if (number / pow == 0)
                 {
                     break;
                 }
