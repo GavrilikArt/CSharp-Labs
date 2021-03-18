@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="95732193-22ed-4416-8181-ca1b7d004fcc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Lab3/DoubleInput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab3/Lab3.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab3/Lab3.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab3/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab3/Vehicle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab3/children classes/Car.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab3/children classes/Toyota.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2.2.task4/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2.2.task4/Program.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Lab2.1.task11/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab2.3.task8/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab2.2.task4/Program.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/.gitignore" />
+      <option value="$PROJECT_DIR$/Lab2.2.task4/Program.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="1pYJ4T6Dr3Fcw21yCbisYsSdKs0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95732193-22ed-4416-8181-ca1b7d004fcc" name="Default Changelist" comment="" />
+      <created>1615353898292</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615353898292</updated>
+      <workItem from="1615353900140" duration="59000" />
+      <workItem from="1615354084302" duration="32000" />
+      <workItem from="1615354223702" duration="2109000" />
+      <workItem from="1615448708062" duration="991000" />
+      <workItem from="1615826745112" duration="42000" />
+      <workItem from="1615836563567" duration="1690000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
