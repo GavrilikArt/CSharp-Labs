@@ -8,10 +8,14 @@ namespace Task4
         {
             ulong amount = 0;
             ulong pow = 2;
-            while (number / pow != 0)
+            for (int i = 1; i < 64; i++)
             {
                 amount += number / pow;
                 pow *= 2;
+                if (number == 0)
+                {
+                    break;
+                }
             }
             return amount;
         }
