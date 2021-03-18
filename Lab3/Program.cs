@@ -9,6 +9,7 @@ namespace Lab3
     {
         public static void Main(string[] args)
         {
+            /*
             List<Toyota> list = new List<Toyota>();
             Car what = new Car(color: "green", material: "iron", transmission: "manual", power: 12,
                 maxSpeed: 12, priceInDollars: 1222, age: 12);
@@ -35,6 +36,8 @@ namespace Lab3
             {
                 Console.WriteLine($"age is {i.Id}");
             }
-}
+            */
+            Vehicle vehicle = new Vehicle(numOfWheels: 1, material: "steel", age: 2, color: "blue");
+        }
     }
 }
