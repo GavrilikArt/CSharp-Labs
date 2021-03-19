@@ -9,9 +9,14 @@ namespace Lab3
     {
         public static void Main(string[] args)
         {
-            Toyota toyota = new Toyota(color: "green", material: "iron", transmission: "manual", model: "camry", power: 13,
-                maxSpeed: 12, countryOfManufacturing: "Japan", priceInDollars: 1222, age: 11);
             Vehicle vehicle = new Vehicle(numOfWheels: 1, material: "steel", age: 2, color: "blue");
+            Vehicle vehicle1 = new Vehicle(numOfWheels: 3, material: "iron", age: 10, color: "cyan");
+            vehicle1.IsOld();
+            Vehicles vehicles = new Vehicles();
+            vehicles[vehicle.Id] = vehicle;
+            vehicles[vehicle1.Id] = vehicle1;
+            Console.Write(vehicles[vehicle.Id]);
+            vehicle.Upgrade("iron", 12, "blue");
         }
     }
 }

@@ -10,10 +10,20 @@ namespace Lab3
         public string Material { get; private set; }
 
         public string Color { get ; private set; }
+        
+        public int Id { get; private set; }
 
         public void GetMinimunInfo()
         {
             Console.WriteLine($"Your vehicle has {NumOfWheels} wheel(s), it is {Color} and it is made of {Material}");
+        }
+        
+        private static int _identifierFactory = 0;
+
+        private static int GetUniqueId()
+        {
+            Vehicle._identifierFactory += 1;
+            return Vehicle._identifierFactory;
         }
 
         void ChangeColor(string color)
@@ -23,6 +33,7 @@ namespace Lab3
 
         public Vehicle()
         {
+            Id = GetUniqueId();
             NumOfWheels = 4;
             Material = "steel";
             Color = "orange";
@@ -43,6 +54,7 @@ namespace Lab3
             this.NumOfWheels = numOfWheels;
             this.Material = material;
             this.Color = color;
+            this.Id = GetUniqueId();
             if (age > 0)
             {
                 this.Age = age;
@@ -52,6 +64,19 @@ namespace Lab3
                 Console.WriteLine("Age cannot be negative, setting it to 0");
                 this.Age = age;
             }
+        }
+
+        public void Upgrade(string material, int numOfWheels, string color)
+        {
+            this.Material = material;
+            this.NumOfWheels = numOfWheels;
+            this.Color = color;
+        }
+
+        public void Upgrade(string material, int numOfWheels)
+        {
+            this.Material = material;
+            this.NumOfWheels = numOfWheels;
         }
 
         public void IsOld()
@@ -93,6 +118,5 @@ namespace Lab3
         }
 
         public override string ToString() => $"Your vehicle has {NumOfWheels} wheel(s), it is {Color} and it is made of {Material}";
-        
     }
 }
