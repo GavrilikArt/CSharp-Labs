@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95732193-22ed-4416-8181-ca1b7d004fcc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lab3/DoubleInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/Lab3.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/Lab3.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/Vehicle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/children classes/Car.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/children classes/Toyota.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2.2.task4/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2.2.task4/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CSharp-Labs.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSharp-Labs.dir/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CSharp-Labs.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSharp-Labs.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +14,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Lab2.1.task11/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Lab2.3.task8/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Lab2.2.task4/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab2.3.task8/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab2.1.task11/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -64,6 +58,14 @@
       <workItem from="1615448708062" duration="991000" />
       <workItem from="1615826745112" duration="42000" />
       <workItem from="1615836563567" duration="1690000" />
+      <workItem from="1616325575970" duration="82000" />
+      <workItem from="1616565859917" duration="82000" />
+      <workItem from="1616565981437" duration="40000" />
+      <workItem from="1616568175412" duration="105000" />
+      <workItem from="1616568466223" duration="176000" />
+      <workItem from="1616568708899" duration="133000" />
+      <workItem from="1616568985858" duration="65000" />
+      <workItem from="1616569252852" duration="23000" />
     </task>
     <servers />
   </component>
@@ -72,6 +74,18 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
