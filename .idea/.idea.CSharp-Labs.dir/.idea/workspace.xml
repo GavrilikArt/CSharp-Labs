@@ -4,6 +4,10 @@
     <list default="true" id="95732193-22ed-4416-8181-ca1b7d004fcc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CSharp-Labs.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSharp-Labs.dir/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CSharp-Labs.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSharp-Labs.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4.GDI/Drawing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4.GDI/Drawing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4.GDI/Lab4.GDI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4.GDI/Lab4.GDI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4.GDI/Lab4.GDI.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4.GDI/Lab4.GDI.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4.GDI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4.GDI/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,9 +18,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Lab2.2.task4/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Lab2.3.task8/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Lab2.1.task11/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab2.3.task8/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab2.2.task4/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -66,6 +70,8 @@
       <workItem from="1616568708899" duration="133000" />
       <workItem from="1616568985858" duration="65000" />
       <workItem from="1616569252852" duration="23000" />
+      <workItem from="1616577278976" duration="124000" />
+      <workItem from="1616577617279" duration="969000" />
     </task>
     <servers />
   </component>
