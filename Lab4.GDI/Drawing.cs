@@ -1,73 +1,70 @@
 ﻿using System;
 using System.Drawing;
+using System.Runtime.InteropServices;
 
 namespace Lab4.GDI
 {
-    class Program {
-        static void Main(string[] args) {
-            Console.WriteLine("Support such commands: fillellips, fillrectangle");
-            Console.WriteLine("Support such colours: red, white");
-            bool wantToDraw = true;
-            do {
+    static class Drawing {
+        [DllImport("User32.dll")]
+        static extern IntPtr GetDC(IntPtr hwnd);
 
-                bool wasDrawn;
-                do {
-                    wasDrawn = false;
-                    Console.WriteLine("Enter command, for instance fillellips:red:10:10:100:200");
-                    string command = Console.ReadLine();
-                    command = command.Replace(" ", "");
-                    command = command.ToLower();
-                    string[] parsedCommand = command.Split(':');
-                    if (parsedCommand[0] == "fillellips") {
-                        try {
-                            Color color = StringToColor(parsedCommand[1]);
-                            int x = Convert.ToInt32(parsedCommand[2]);
-                            int y = Convert.ToInt32(parsedCommand[3]);
-                            int width = Convert.ToInt32(parsedCommand[4]);
-                            int height = Convert.ToInt32(parsedCommand[5]);  
-                            Drawing.FillEllips(color, x, y, width, height);
-                            wasDrawn = true;
-                        }
-                        catch (Exception ex) {
-                            Console.WriteLine($"Can't work with such command: {ex.Message}");
-                        }
-                    }
-                    else if (parsedCommand[0] == "fillrectangle") {
-                        try {
-                            Color color = StringToColor(parsedCommand[1]);
-                            int x = Convert.ToInt32(parsedCommand[2]);
-                            int y = Convert.ToInt32(parsedCommand[3]);
-                            int width = Convert.ToInt32(parsedCommand[4]);
-                            int height = Convert.ToInt32(parsedCommand[5]);
-                            Drawing.FillRectangle(color, x, y, width, height);
-                            wasDrawn = true;
-                        }
-                        catch (Exception ex) {
-                            Console.WriteLine($"Can't work with such command: {ex.Message}");
-                        }
-                    }
-                    else {
-                        Console.WriteLine($"There is no such command {parsedCommand[0]}");
-                    }
-                } while (!wasDrawn);
-                Console.WriteLine("Want to continue? (hit escape to leave, any other - stay): ");
-                ConsoleKeyInfo proposal = Console.ReadKey();
-                if(proposal.Key == ConsoleKey.Escape) {
-                    wantToDraw = false;
-                }
-            } while (wantToDraw);
+        [DllImport("User32.dll")]
+        static extern int ReleaseDC(IntPtr hwnd);
+        static public void FillEllips(Color color, int x, int y, int width, int height) {
+            SolidBrush brush= new SolidBrush(color);
+            IntPtr desktopDC = GetDC(IntPtr.Zero);
+            Graphics g = Graphics.FromHdc(desktopDC);
+            g.FillEllipse(brush, x, y, width, height);
+            g.Dispose();
+            ReleaseDC(desktopDC);
         }
-        static Color StringToColor(string colorStr) {
-            Color color;
-            if(colorStr == "red") {
-                color = Color.Red;
-            } else if(colorStr == "white") {
-                color = Color.White;
+        static public void FillRectangle(Color color, int x, int y, int width, int height) {
+            SolidBrush brush = new SolidBrush(color);
+            IntPtr desktopDC = GetDC(IntPtr.Zero);
+            Graphics g = Graphics.FromHdc(desktopDC);
+            g.FillRectangle(brush, x, y, width, height);
+            g.Dispose();
+            ReleaseDC(desktopDC);
+        }
+        static public void DrawBezier(string color, int x, int y, int x1, int x2) {
+            //SolidBrush brush = new SolidBrush(color);
+            IntPtr desktopDC = GetDC(IntPtr.Zero);
+            Graphics g = Graphics.FromHdc(desktopDC);
+            Pen skyBluePen = new Pen(Brushes.Red);
+            if (color == "red")
+            {
+                skyBluePen = new Pen(Brushes.Red);
             }
-            else {
-                throw new Exception($"No existing color {colorStr}");
+            else
+            {
+                skyBluePen = new Pen(Brushes.White);
             }
-            return color;
+
+            // Set the pen's width.
+            skyBluePen.Width = 8.0F;
+
+            // Set the LineJoin property.
+            skyBluePen.LineJoin = System.Drawing.Drawing2D.LineJoin.Bevel;
+
+            // Draw a rectangle.
+            g.DrawBezier(skyBluePen, new PointF(x, y), new PointF((x + 500) / 3, (y + 500) / 3), new PointF((x + 500) / 2, (y + 500) / 2), new PointF(x1, x2));
+            //Dispose of the pen.
+            skyBluePen.Dispose();
+        }
+
+        static public void DrawClosedCurve(Color color, params int[] coords)
+        {
+            //SolidBrush brush = new SolidBrush(color);
+            IntPtr desktopDC = GetDC(IntPtr.Zero);
+            Graphics g = Graphics.FromHdc(desktopDC);
+            Pen pen = new Pen(color, 3);
+            Point[] curvePoints = new Point[coords.Length / 2];
+            for (int i = 0; i < coords.Length; i += 2)
+            {
+                curvePoints[i / 2] = new Point(coords[i], coords[i + 1]);
+            }
+            g.DrawLines(pen, curvePoints);
+            g.DrawClosedCurve(pen, curvePoints);
         }
     }
 }
