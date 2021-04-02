@@ -8,7 +8,7 @@
         <OutputType>Exe</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>Lab3</RootNamespace>
-        <AssemblyName>Lab3</AssemblyName>
+        <AssemblyName>Lab3and5and6</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
@@ -39,8 +39,11 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="children classes\Car.cs" />
-        <Compile Include="children classes\Toyota.cs" />
+        <Compile Include="children classes\Formula1.cs" />
+        <Compile Include="children classes\Truck.cs" />
         <Compile Include="DoubleInput.cs" />
+        <Compile Include="IFormula1.cs" />
+        <Compile Include="ITruck.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Vehicle.cs" />

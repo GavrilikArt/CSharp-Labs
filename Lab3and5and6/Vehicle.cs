@@ -1,8 +1,8 @@
 using System;
 
-namespace Lab3
+namespace VehicleProject
 {
-    public class Vehicle
+    public abstract class Vehicle
     {
         public int Age { get; private set; }
         private int NumOfWheels { get; set; }
@@ -13,7 +13,7 @@ namespace Lab3
         
         public int Id { get; private set; }
 
-        public void GetMinimunInfo()
+        public virtual void GetMinimumInfo()
         {
             Console.WriteLine($"Your vehicle has {NumOfWheels} wheel(s), it is {Color} and it is made of {Material}");
         }
@@ -66,11 +66,10 @@ namespace Lab3
             }
         }
 
-        public void Upgrade(string material, int numOfWheels, string color)
+        public virtual double Upgrade()
         {
-            this.Material = material;
-            this.NumOfWheels = numOfWheels;
-            this.Color = color;
+            this.NumOfWheels += 1;
+            return 0.5;
         }
 
         public void Upgrade(string material, int numOfWheels)
@@ -90,13 +89,7 @@ namespace Lab3
                 Console.WriteLine("Your car is not old");
             }
         }
-
-        public static Vehicle operator +(Vehicle lhs, Vehicle rhs) => new Vehicle(
-            numOfWheels: lhs.NumOfWheels + rhs.NumOfWheels, 
-            material: lhs.Material,
-            color: rhs.Color,
-            age: lhs.Age + rhs.Age
-            );
+        
         public void ChangeCarMaterial(string material)
         {
             Material = material;

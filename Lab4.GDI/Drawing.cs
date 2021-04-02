@@ -26,11 +26,11 @@ namespace Lab4.GDI
             g.Dispose();
             ReleaseDC(desktopDC);
         }
-        static public void DrawBezier(string color, int x, int y, int x1, int x2) {
+        static public void DrawBezier(string color, int x, int y, int x1, int y1) {
             //SolidBrush brush = new SolidBrush(color);
             IntPtr desktopDC = GetDC(IntPtr.Zero);
             Graphics g = Graphics.FromHdc(desktopDC);
-            Pen skyBluePen = new Pen(Brushes.Red);
+            Pen skyBluePen = new Pen(Brushes.Blue);
             if (color == "red")
             {
                 skyBluePen = new Pen(Brushes.Red);
@@ -39,16 +39,9 @@ namespace Lab4.GDI
             {
                 skyBluePen = new Pen(Brushes.White);
             }
-
-            // Set the pen's width.
             skyBluePen.Width = 8.0F;
-
-            // Set the LineJoin property.
             skyBluePen.LineJoin = System.Drawing.Drawing2D.LineJoin.Bevel;
-
-            // Draw a rectangle.
-            g.DrawBezier(skyBluePen, new PointF(x, y), new PointF((x + 500) / 3, (y + 500) / 3), new PointF((x + 500) / 2, (y + 500) / 2), new PointF(x1, x2));
-            //Dispose of the pen.
+            g.DrawBezier(skyBluePen, new PointF(x, y), new PointF((x + x1) / 3, (y +y1) / 3), new PointF((x + x1) / 2, (y + y1) / 2), new PointF(x1, y1));
             skyBluePen.Dispose();
         }
 
