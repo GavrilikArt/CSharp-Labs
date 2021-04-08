@@ -14,15 +14,15 @@ namespace VehicleProject
                 transmission: "manual", color: "red");
             Truck truck = new Truck(power: 5, material: "iron", age: 2, priceInDollars: 5, maxSpeed: 10,
                 transmission: "manual", color: "red", maxWeight: 100, currentWeight: 200);
-            Formula1 toyota = new Formula1(power: 5, material: "iron", age: 2, priceInDollars: 100, maxSpeed: 290,
+            Car toyota = new Formula1(power: 5, material: "iron", age: 2, priceInDollars: 100, maxSpeed: 290,
                 transmission: "manual", color: "dark", model: "camry", countryOfManufacturing: "Japan", brand: "Toyota");
-            Formula1 audi = new Formula1(power: 5, material: "steel", age: 2, priceInDollars: 90000, maxSpeed: 300,
+            Car audi = new Formula1(power: 5, material: "steel", age: 2, priceInDollars: 90000, maxSpeed: 300,
                 transmission: "manual", color: "red", model: "camry", countryOfManufacturing: "Germany", brand: "Audi");
-            Formula1 mercedes = new Formula1(power: 5, material: "iron", age: 2, priceInDollars: 100000, maxSpeed: 280,
+            Car mercedes = new Formula1(power: 5, material: "iron", age: 2, priceInDollars: 100000, maxSpeed: 280,
                 transmission: "manual", color: "red", model: "camry", countryOfManufacturing: "Germany", brand: "Mercedes");
-            toyota.CheckSpeed();
-            audi.CheckSpeed();
-            List<Formula1> formula1s = new List<Formula1>();
+            string a = ((Formula1) toyota).ToString();
+            Console.WriteLine(a);
+            List<Car> formula1s = new List<Car>();
             formula1s.Add(toyota);
             formula1s.Add(audi);
             formula1s.Add(mercedes);

@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95732193-22ed-4416-8181-ca1b7d004fcc" name="Default Changelist" comment="Added lab4">
+    <list default="true" id="95732193-22ed-4416-8181-ca1b7d004fcc" name="Default Changelist" comment="Added lab 5, 6">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CSharp-Labs.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSharp-Labs.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/Vehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/Vehicle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4.DynamicLibrary/source/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4.DynamicLibrary/source/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4.DynamicLibrary/source/dll/physics.h" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4.DynamicLibrary/source/dll/physics.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4.GDI/Drawing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4.GDI/Drawing.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,15 +13,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Lab3/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Lab3/children classes/Car.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Lab4.GDI/Drawing.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Lab3/Vehicle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Lab2.1.task11/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Lab4.GDI/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Lab2.3.task8/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Lab2.2.task4/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Lab3/Vehicles.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab2.2.task4/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -82,6 +74,8 @@
       <workItem from="1616746469968" duration="172000" />
       <workItem from="1616756399209" duration="441000" />
       <workItem from="1617257789719" duration="97000" />
+      <workItem from="1617349404967" duration="158000" />
+      <workItem from="1617807097359" duration="38000" />
     </task>
     <task id="LOCAL-00001" summary="Added lab4">
       <created>1616738555469</created>
@@ -97,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616738612250</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added lab 5, 6">
+      <created>1617349435489</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617349435489</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Added lab4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added lab4" />
+    <MESSAGE value="Added lab 5, 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added lab 5, 6" />
   </component>
 </project>
