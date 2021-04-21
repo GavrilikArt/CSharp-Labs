@@ -57,6 +57,7 @@ namespace Lab7
             //Comparison operators
 
             Console.WriteLine("____________________");
+            Console.WriteLine("IFormattable");
             testing = new Fraction(-5, 2);
             Console.WriteLine("{0:F}", testing);
             Console.WriteLine("{0:IF}", testing);
@@ -65,7 +66,7 @@ namespace Lab7
             Console.WriteLine("{0:D5}", testing);
             //Converting to string in different formats and IFormattible implementation
             Console.WriteLine("____________________");
-            Console.WriteLine("//Converting to string in different formats and IFormattible implementation");
+            Console.WriteLine("//Converting to string in different formats and IConvertable implementation");
             Console.WriteLine((int)testing);
             Console.WriteLine((double)testing);
             Console.WriteLine(Convert.ToBoolean(testing));

@@ -196,8 +196,7 @@ namespace Lab7
 
         public override bool Equals(object obj)
         {
-            return obj is Fraction fraction &&
-                   CompareTo(fraction) == 0;
+            return obj is Fraction fraction && CompareTo(fraction) == 0;
         }
 
         public override int GetHashCode()

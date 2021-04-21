@@ -3,6 +3,22 @@ namespace VehicleProject
 {
     public sealed class Formula1 : Car, IFormula1, IComparable<Formula1>
     {
+        public delegate void CarComment(string message);
+
+        public event CarComment Complement;
+        public event CarComment Criticize;
+
+        public void GirlsReaction(string name)
+        {
+            if (PriceInDollars > 50000)
+            {
+                Complement?.Invoke($"{name} says that you have a nice car");
+            }
+            else
+            {
+                Criticize?.Invoke($"{name} says that you have a crappy car, time to get a better job(or at least get one)");
+            }
+        }
         public string PilotName { get; set; }
         public string Brand { get; set; }
         public double ActualSpeed { get; set; }

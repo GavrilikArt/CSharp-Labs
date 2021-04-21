@@ -8,7 +8,7 @@
         <OutputType>Exe</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>Lab3</RootNamespace>
-        <AssemblyName>Lab3and5and6</AssemblyName>
+        <AssemblyName>Lab3and5and6and8</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>

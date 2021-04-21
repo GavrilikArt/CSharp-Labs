@@ -10,6 +10,7 @@ namespace VehicleProject
     }
     public class Car : Vehicle, IComparable<Car>
     {
+        public delegate void CustomUpgade(ref double maxSpeed, ref double priceInDollars, ref double power);
         public CarDoc CarInfo { get; }
         public double Power { get; set; }
         public string Transmission { get; private set; }
@@ -101,6 +102,19 @@ namespace VehicleProject
         {
             car.Power += 100;
             return car;
+        }
+
+        public void Upgrage(CustomUpgade function)
+        {
+            if (MaxSpeed == 0)
+            {
+                throw new InvalidOperationException("This car is broken");
+            }
+            double power = Power;
+            double speed = MaxSpeed;
+            double price = PriceInDollars;
+            function.Invoke(ref speed, ref price, ref power);
+            (Power, MaxSpeed, PriceInDollars) = (power, speed, price);
         }
         public override double Upgrade()
         {

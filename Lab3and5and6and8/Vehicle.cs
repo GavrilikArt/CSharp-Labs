@@ -4,6 +4,12 @@ namespace VehicleProject
 {
     public abstract class Vehicle
     {
+        public delegate void PrintMethod(string msg);
+
+        public void PrintInformation(PrintMethod method)
+        {
+            method.Invoke(ToString());
+        }
         public int Age { get; private set; }
         private int NumOfWheels { get; set; }
 
